@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "../style/header.css";
 
+import bellIcon from "../assets/bell.png";
+import avatarIcon from "../assets/avatar.png";
+import addIcon from "../assets/add.png";
+
 function Header() {
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -25,11 +29,9 @@ function Header() {
       </div>
 
       <div className="top-right-icons">
-        <img className="navImg" src="/assets/bell.png" alt="Notification Bell" />
-
-        <img className="navImg" src="/assets/avatar.png" alt="User Avatar" />
-
-        <img className="navImg" src="/assets/add.png" alt="Add Icon" />
+        <img className="navImg" src={bellIcon} alt="Notification Bell" />
+        <img className="navImg" src={avatarIcon} alt="User Avatar" />
+        <img className="navImg" src={addIcon} alt="Add Icon" />
       </div>
     </header>
   );

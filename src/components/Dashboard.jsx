@@ -6,21 +6,30 @@ import Activity from './Activity';
 import Sidebar from './SideBar';
 import Appointment from './Appointment';
 
+import dashIcon from '../assets/dash.jpeg';
+import historyIcon from '../assets/history.jpeg';
+import calendarIcon from '../assets/calendar.jpeg';
+import appointmentIcon from '../assets/appointment.png';
+import statisticsIcon from '../assets/statistics.jpeg';
+import chatIcon from '../assets/chat.png';
+import supportIcon from '../assets/support.png';
+import settingsIcon from '../assets/settings.jpeg';
+
 const Dashboard = () => {
   const generalItems = [
-    { label: 'Dashboard', icon: '/assets/dash.jpeg' },
-    { label: 'History', icon: '/assets/history.jpeg' },
-    { label: 'Calendar', icon: '/assets/calendar.jpeg' },
-    { label: 'Appointments', icon: '/assets/appointment.png' },
-    { label: 'Statistics', icon: '/assets/statistics.jpeg' }
+    { label: 'Dashboard', icon: dashIcon },
+    { label: 'History', icon: historyIcon },
+    { label: 'Calendar', icon: calendarIcon },
+    { label: 'Appointments', icon: appointmentIcon },
+    { label: 'Statistics', icon: statisticsIcon }
   ];
 
   const toolsItems = [
-    { label: 'Chat', icon: '/assets/chat.png' },
-    { label: 'Support', icon: '/assets/support.png' }
+    { label: 'Chat', icon: chatIcon },
+    { label: 'Support', icon: supportIcon }
   ];
 
-  const settingItem = { label: 'Setting', icon: '/assets/settings.jpeg' };
+  const settingItem = { label: 'Setting', icon: settingsIcon };
 
   return (
     <div className="dashboard-container gray">
@@ -54,35 +63,32 @@ const Dashboard = () => {
           </div>
         </nav>
       </aside>
-<main className="main-content">
-  <div className="dashboard-overview">
-    
-    {/* LEFT SIDE: Anatomy + Activity */}
-    <div className="overview-left">
-      {/* Anatomy Section */}
-      <Sidebar />
 
-      {/* Activity Section Below Anatomy */}
-      <div className="activity-wrapper">
-        <Activity />
-      </div>
-    </div>
+      <main className="main-content">
+        <div className="dashboard-overview">
+          {/* LEFT SIDE: Anatomy + Activity */}
+          <div className="overview-left">
+            {/* Anatomy Section */}
+            <Sidebar />
 
-    {/* RIGHT SIDE: Calendar + Schedule stacked vertically */}
-    <div className="overview-right">
-      <div className="calendar-wrapper">
-        <Calendar />
-      </div>
-      <div className="schedule-wrapper">
-        <Appointment />
-        <Schedule />
-      </div>
-    </div>
-  </div>
-</main>
+            {/* Activity Section Below Anatomy */}
+            <div className="activity-wrapper">
+              <Activity />
+            </div>
+          </div>
 
-
-
+          {/* RIGHT SIDE: Calendar + Schedule stacked vertically */}
+          <div className="overview-right">
+            <div className="calendar-wrapper">
+              <Calendar />
+            </div>
+            <div className="schedule-wrapper">
+              <Appointment />
+              <Schedule />
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
