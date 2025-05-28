@@ -1,10 +1,12 @@
+import body from'../../public/assets/body.jpeg'
+
 
 const Sidebar = () => {
   return (
     <section className="dashboard-overview">
           <div className="overview-image-and-cards">
             <div className="image-card">
-              <img src="/assets/body.jpeg" alt="Human Body" className="anatomy-image" />
+              <img src={body} alt="Human Body" className="anatomy-image" />
               <button className="tag tag-heart">❤️ Healthy Heart</button>
               <button className="tag tag-leg">🦵 Healthy Leg</button>
             </div>
