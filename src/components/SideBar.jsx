@@ -1,4 +1,4 @@
-import body from'../../public/assets/body.jpeg'
+import body from'../assets/body.jpeg'
 
 
 const Sidebar = () => {

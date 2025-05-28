@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "../style/header.css";
 
-import bellIcon from "../../public/assets/bell.png";
-import avatarIcon from "../../public/assets/avatar.png";
-import addIcon from "../../public/assets/add.png";
+import bellIcon from "../assets/bell.png";
+import avatarIcon from "../assets/avatar.png";
+import addIcon from "../assets/add.png";
 
 
 function Header() {

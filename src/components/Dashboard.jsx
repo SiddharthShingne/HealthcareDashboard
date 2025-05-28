@@ -6,14 +6,14 @@ import Activity from './Activity';
 import Sidebar from './SideBar';
 import Appointment from './Appointment';
 
-import dashIcon from "../../public/assets/dash.jpeg";
-import historyIcon from "../../public/assets/history.jpeg";
-import calendarIcon from "../../public/assets/calendar.jpeg";
-import appointmentIcon from "../../public/assets/appointment.png";
-import statisticsIcon from "../../public/assets/statistics.jpeg";
-import chatIcon from "../../public/assets/chat.png";
-import supportIcon from "../../public/assets/support.png";
-import settingsIcon from "../../public/assets/settings.jpeg";
+import dashIcon from "../assets/dash.jpeg";
+import historyIcon from "../assets/history.jpeg";
+import calendarIcon from "../assets/calendar.jpeg";
+import appointmentIcon from "../assets/appointment.png";
+import statisticsIcon from "../assets/statistics.jpeg";
+import chatIcon from "../assets/chat.png";
+import supportIcon from "../assets/support.png";
+import settingsIcon from "../assets/settings.jpeg";
 
 
 
