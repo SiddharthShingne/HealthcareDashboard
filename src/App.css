@@ -1,0 +1,27 @@
+/* body{
+  background:#f0f8ff;
+}
+.container{
+  background:white ;
+  margin: 5px;
+  border-radius: 20px;
+  margin: 20px 15px 20px 15px;
+  
+}
+ */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 30px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+}
